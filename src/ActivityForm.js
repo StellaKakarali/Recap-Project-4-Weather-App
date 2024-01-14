@@ -22,15 +22,20 @@ export default function ActivityForm({ onAddActivity }) {
     <div>
       <h1>Add new Activity</h1>
       <form onSubmit={handleSubmit}>
-        <label> Activity Name</label>
-        <input
-          id="activity"
-          type="text"
-          name="activity"
-          placeholder="Walking"
-        />
-        <label>Good weather</label>
-        <input id="weather" type="checkbox" name="weatherActivity" />
+        <label> Add New Activity: </label>
+        <section className="beside">
+          <label>Name: </label>
+          <input
+            id="activity"
+            type="text"
+            name="activity"
+            placeholder="Walking"
+          />
+        </section>
+        <section className="beside">
+          <label>Good-weather: </label>
+          <input id="weather" type="checkbox" name="weatherActivity" />
+        </section>
         <button id="button" type="submit">
           Submit
         </button>
