@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ActivityForm from "./ActivityForm";
 import { uid } from "uid";
