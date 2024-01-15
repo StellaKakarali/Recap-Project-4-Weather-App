@@ -12,7 +12,7 @@ function App() {
   // console.log(name);
 
   function handleAddActivity(newActivity) {
-    setActivities([...activities, newActivity]);
+    setActivities([...activities, { ...newActivity, id: uid() }]);
     //setActivities([newActivity]);
     // console.log("App: ", activities);
     console.log("ich bin eine Aktivität: ", newActivity);

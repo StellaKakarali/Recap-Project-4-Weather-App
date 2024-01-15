@@ -7,6 +7,7 @@ export default function ActivityForm({ onAddActivity }) {
     event.preventDefault();
 
     const newActivity = {
+      id: uid(),
       name: event.target.elements.activity.value,
       isForGoodWeather: event.target.elements.weatherActivity.checked,
     };
