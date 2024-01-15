@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  background: #8b0000;
+  color: #f5f5f5;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid gold;
+  font-size: 1em;
+  padding: 10px 12px 10px 12px;
+  border-radius: 5%;
+  margin: 100px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+label,
+input,
+button {
+  margin-top: 10px;
+}
+
+.beside {
+  display: flex;
+  flex-direction: row;
+}
