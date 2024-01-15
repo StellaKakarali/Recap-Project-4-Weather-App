@@ -7,17 +7,10 @@ import { useState } from "react";
 function App() {
   const [activities, setActivities] = useState([]);
 
-  // const box = { name: "baum streicheln", isForGoodWeather: false };
-  // const { name, isForGoodWeather } = box;
-  // console.log(name);
-
   function handleAddActivity(newActivity) {
     setActivities([...activities, { ...newActivity, id: uid() }]);
-    //setActivities([newActivity]);
-    // console.log("App: ", activities);
     console.log("ich bin eine Aktivität: ", newActivity);
   }
-  //console.log(activities);
   return (
     <main>
       <ActivityForm onAddActivity={handleAddActivity} />

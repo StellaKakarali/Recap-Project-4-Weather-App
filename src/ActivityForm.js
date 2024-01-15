@@ -1,13 +1,10 @@
-import { useState } from "react";
 import "./ActivityForm.css";
 
 export default function ActivityForm({ onAddActivity }) {
-  //console.log(onAddActivity);
   function handleSubmit(event) {
     event.preventDefault();
 
     const newActivity = {
-      id: uid(),
       name: event.target.elements.activity.value,
       isForGoodWeather: event.target.elements.weatherActivity.checked,
     };
@@ -23,9 +20,9 @@ export default function ActivityForm({ onAddActivity }) {
     <div>
       <h1>Add new Activity</h1>
       <form onSubmit={handleSubmit}>
-        <label> Add New Activity: </label>
+        <h2> Add New Activity </h2>
         <section className="beside">
-          <label>Name: </label>
+          <label htmlFor="activity">Name: </label>
           <input
             id="activity"
             type="text"
@@ -34,7 +31,7 @@ export default function ActivityForm({ onAddActivity }) {
           />
         </section>
         <section className="beside">
-          <label>Good-weather: </label>
+          <label htmlFor="weather">Good-weather: </label>
           <input id="weather" type="checkbox" name="weatherActivity" />
         </section>
         <button id="button" type="submit">
